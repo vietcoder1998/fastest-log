@@ -22,3 +22,5 @@ declare namespace log {
     function log_stdout({type, timeUTC, ...args}: StdoutOptions): void
     function clean (): void
 }
+
+module.exports = log

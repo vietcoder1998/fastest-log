@@ -41,7 +41,7 @@ const clean = function () {
     fs.truncate(path.join(__dirname, 'debug.log'), function(){log_stdout('delete_log_debug')})
 }
 
-module.exports = {
+module.exports.log = {
     debug,
     err,
     info,
