@@ -1,11 +1,12 @@
 {
   "name": "fastest-log",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A quick log for nodejs backend",
   "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/vietcoder1998/fastest-log.git"
