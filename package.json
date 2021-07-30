@@ -4,11 +4,11 @@
   "description": "A quick log for nodejs backend",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/vietcoder1998/quick-log.git"
+    "url": "git+ssh://git@github.com/vietcoder1998/fastest-log.git"
   },
   "keywords": [
     "log"

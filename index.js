@@ -1,3 +1,5 @@
+'use strict'
+
 const fs = require('fs')
 const path = require('path')
 
@@ -7,13 +9,11 @@ const log_stdout = function(v){process.stdout.write(v)}
 const timeUTC = (function () {
     return new Date().toString()
 })()
-
 const type =  {
     DEBUG: 'DEBUG',
     INFO: 'INFO',
     ERROR: 'ERROR',
 }
-
 const debug = function (...args) {
     console.log(`\x1b[0m[\x1b[35m${type.DEBUG}\x1b[0m] ${timeUTC}`, ...args)
     stream_out(type.DEBUG, timeUTC, ...args)
@@ -29,7 +29,7 @@ const info = function (...args) {
     stream_out(type.INFO, timeUTC, ...args)
 }
 
-const stream_out = function (type,timeUTC,  ...args) {
+const stream_out = function (type, timeUTC,  ...args) {
     log_stream.write('[' + type + ']')
     log_stream.write(timeUTC)
     log_stream.write(...args)
@@ -39,12 +39,12 @@ const stream_out = function (type,timeUTC,  ...args) {
 
 const clean = function () {
     fs.truncate(path.join(__dirname, 'debug.log'), function(){log_stdout('delete_log_debug')})
-    
 }
 
 module.exports = {
     debug,
     err,
     info,
-    clean
+    clean,
+    type,
 }
