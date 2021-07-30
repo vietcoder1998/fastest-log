@@ -1,5 +1,5 @@
 {
-  "name": "quick-log",
+  "name": "fastest-log",
   "version": "1.0.0",
   "description": "A quick log for nodejs backend",
   "main": "index.js",
