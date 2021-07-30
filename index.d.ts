@@ -4,7 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /// <reference types="node" />
 
-declare namespace log {
+export declare namespace log {
     type Type = {
         DEBUG: 'DEBUG',
         INFO: 'INFO',
@@ -22,5 +22,3 @@ declare namespace log {
     function log_stdout({type, timeUTC, ...args}: StdoutOptions): void
     function clean (): void
 }
-
-module.exports = log
