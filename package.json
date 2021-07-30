@@ -1,0 +1,22 @@
+{
+  "name": "quick-log",
+  "version": "1.0.0",
+  "description": "A quick log for nodejs backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vietcoder1998/quick-log.git"
+  },
+  "keywords": [
+    "log"
+  ],
+  "author": "Tran Duy Viet (duyviet2841998@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vietcoder1998/quick-log/issues"
+  },
+  "homepage": "https://github.com/vietcoder1998/quick-log#readme"
+}
